@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #f0ac5a;
+    /* padding: 5px 5px   ; */
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+.navbar .container a{
+   
+    color: #000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Quick Stats */
+.stats h5{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0ac5a;
+}
+.stat-box:hover {
+    background: #f0ac5a;
+    transition: 0.3s;
+    color: #fff;
+}
+.stat-box:hover i {
+    color: #fff;    
+}
+.stat-box:hover span {
+    color: #fff;
+}
+.stat-box:hover {
+    transform: scale(1.05);
+}
+
+
+.stat-box i {
+    font-size: 2rem;
+    color: #f0ac5a;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Search and Filter */
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-box, .filter-box {
+    display: flex;
+    gap: 10px;
+}
+.search-box #sortSelect option{
+    background-color: #fff;
+    color: #000;
+}
+.search-box #sortSelect option:hover{
+    background-color: #f0ac5a;
+    color: #fff;
+}
+
+
+input, select, button {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #f0ac5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f0ac5a;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background: #f0ac5a;
+    color: white;
+    transition: 0.3s ease;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table-responsive{
+    border-radius: 5px;
+}
+tbody tr:hover {
+    background: #f0ac5a;    
+    color: white;
+}
+tbody:nth-child(odd) {
+    background: #f0ac5a;
+    color: white;
+}
+.btn{
+    background: #f0ac5a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.student-details, .performance-overview, .assignment-history {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.performance-overview{
+    height: 500px;
+    width: auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f0ac5a;
+    color: white;
+}

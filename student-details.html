@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details - Gradebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Student Grade</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student-details.html">Assignment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="student-details">
+            <h5 id="studentName">Student Name</h5>
+            <p><strong>ID:</strong> <span id="studentId"></span></p>
+            <p><strong>Average Grade:</strong> <span id="studentAvgGrade"></span></p>
+            <p><strong>Attendance:</strong> <span id="studentAttendance"></span></p>
+        </section>
+
+        <section class="performance-overview">
+            <h5>Performance Overview</h5>
+            <canvas id="performanceChart"></canvas>
+        </section>
+
+        <section class="assignment-history mt-4">
+            <h5>Assignment History</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Submission Date</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="assignmentHistory">
+                    <!-- Assignment history will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js"></script>
+    <script src="student-details.js"></script>
+</body>
+</html>
